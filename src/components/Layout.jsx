@@ -10,7 +10,7 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <Container maxWidth={'xl'} sx={{marginTop: 7, display: 'flex', justifyContent: 'center'}}>
+      <Container maxWidth={'xl'} sx={{marginTop: 3, display: 'flex', justifyContent: 'center'}}>
           <Outlet />
       </Container>
     </>

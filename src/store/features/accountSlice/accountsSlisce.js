@@ -20,9 +20,14 @@ export const addNewAccount = createAsyncThunk('accounts/addNewAccount', async (d
 export const updateAccount = createAsyncThunk('accounts/updateAccount', async (data) => {
     const {id, is_paid} = data
     const response = await $api.put(`/account/update/${id}`, {is_paid: is_paid})
-    console.log(response.data)
     return response?.data
 })
+
+export const findByCompaniesNameAccount = createAsyncThunk('accounts/findByCompaniesNameAccount', async (data) => {
+    const response = await $api.post('account/name/find', data)
+    return response?.data
+})
+
 
 const accountsSlice = createSlice({
     name: 'accounts',
@@ -61,6 +66,10 @@ const accountsSlice = createSlice({
             .addCase(updateAccount.rejected, (state, action) => {
                 state.status = 'failed'
                 state.error = action.error.message
+            })
+            .addCase(findByCompaniesNameAccount.fulfilled, (state, action) => {
+                state.error = 'succeeded'
+                state.accounts = action.payload
             })
         }
 })
