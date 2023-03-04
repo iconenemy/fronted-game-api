@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 15px; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem; color:#2B2A2C;
 }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(/public//images/5026563.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat; 
+}
+
+*, *:before, *:after {
+  box-sizing: border-box
+}
+
+/* Loading */
+
+@keyframes ldio-cdw6ei97iig {
+  0% { transform: scale(1.1500000000000001) }
+  100% { transform: scale(1) }
+}
+.ldio-cdw6ei97iig div {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  top: 14px;
+  left: 14px;
+  background: #2596be;
+  animation: ldio-cdw6ei97iig 1.7857142857142856s cubic-bezier(0,0.5,0.5,1) infinite;
+  animation-delay: -0.5357142857142857s;
+}
+.ldio-cdw6ei97iig div:nth-child(2) {
+  top: 14px;
+  left: 57px;
+  background: #56c5ed;
+  animation-delay: -0.35714285714285715s;
+}
+.ldio-cdw6ei97iig div:nth-child(3) {
+  top: 57px;
+  left: 14px;
+  background: #b6effa;
+  animation-delay: 0s;
+}
+.ldio-cdw6ei97iig div:nth-child(4) {
+  top: 57px;
+  left: 57px;
+  background: #8ee0fe;
+  animation-delay: -0.17857142857142858s;
+}
+.loadingio-spinner-cube-kzw74arhzv {
+  width: 95px;
+  height: 95px;
+  display: inline-block;
+  overflow: hidden;
+  background: rgba(NaN, NaN, NaN, 0);
+}
+.ldio-cdw6ei97iig {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.95);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-cdw6ei97iig div { box-sizing: content-box; }
