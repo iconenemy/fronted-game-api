@@ -71,7 +71,7 @@ const AccountItem = ({ item }) => {
             color="neutral"
             onClick={(event) => handleSubmit(event, item._id, item.is_paid)}
           >
-            Add to account
+            Pay the bill
           </Button>
         </StyledTableCell>
       )}
